@@ -43,3 +43,7 @@
         {{ end }}
     </div>
 </footer>
+
+{{ if .Site.Params.utterancesRepo }}
+    {{ template "partials/utterances.html" . }}
+{{ end }}
